@@ -1,0 +1,136 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: repeat(3,auto);
+    /* grid-template-rows: 200px; */
+    padding: 5px;
+    /* background-color: #9f8585; */
+    /* height: 800px; */
+    width: 60%;
+    margin: auto;
+    /* gap: 5px; */
+    border: 1px solid black;
+}
+
+.profile-image{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* background-color: #606060; */
+}
+
+.profile-image img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profile-name{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    /* background-color: #6c1b24; */
+}
+
+.contact{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: white;
+    /* background-color: #ffc6e9; */
+}
+
+.top-skills{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: white;
+    /* height: 30px; */
+    /* background-color: #7688ff; */
+}
+
+.languages{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    color: white;
+    /* background-color: hsl(140, 100%, 73%); */
+}
+
+.aside-1{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: #3e3e3e;
+    /* background-image: url('/assets/pattern.jpeg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.aside-2{
+    grid-column: 2/4;
+    grid-row: 1/5;
+    /* background-image: url('/assets/background-3.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: #b4b4b4;
+}
+
+.experience{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    /* opacity: 0.5; */
+    /* background-color: rgb(255, 132, 181); */
+}
+
+.education{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    /* opacity: 0.5; */
+    /* background-color: #7688ff; */
+}
+
+a{
+    color: white;
+
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+    /* color: #fca311; */
+    /* color: brown; */
+    margin-top: 0px;
+    background-color: #133951;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+h3{
+    /* color: white; */
+}
+
+.heading-1{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0px;
+    color: #fca311;
+    font-size: 16px;
+}
+
+p{
+    /* color: white; */
+    line-height: 1.5;
+}
+
+div{
+    padding: 10px;
+}
+
+.sub-heading{
+    color: rgb(86, 86, 86);
+    font-style: italic;
+    margin-top: -12px;
+}
