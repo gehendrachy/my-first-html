@@ -81,3 +81,81 @@
 *{
     box-sizing: border-box;
 }
+
+.grid-container{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+                "global global global"
+                "navbar navbar navbar"
+                "banner banner offer-1"
+                "banner banner offer-2"
+                "left-side-menu product product"
+                "recent product product"
+                "tags product product"
+                "footer footer footer"
+                ;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: 200px auto(8, 80px); */
+}
+
+.grid-container div{
+    /* background-color: green; */
+    min-height: 80px;
+    text-align: center;
+    align-content: center;
+    /* vertical-align: center; */
+    font-size: 20px;
+}
+
+.global{
+    background-color: blue;
+    grid-area: global;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    background-color: red;
+    grid-area: navbar;
+}
+
+.banner{
+    background: linear-gradient(to right, red 20%, blue 80%);
+    grid-area: banner;
+}
+
+.offer-1{
+    background-color: maroon;
+    grid-area: offer-1;
+}
+
+.offer-2{
+    background-color: purple;
+    grid-area: offer-2;
+}
+
+.left-side-menu{
+    background-color: lightblue;
+    grid-area: left-side-menu;
+}
+
+.recent{
+    background-color: purple;
+    grid-area: recent;
+}
+
+.tags{
+    background-color: red;
+    grid-area: tags;
+}
+
+.product{
+    background-image: radial-gradient(red, blue);
+    grid-area: product;
+}
+
+.footer{
+    color: white;
+    background-color: black;
+    grid-area: footer;
+}
