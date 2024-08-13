@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        :root{
+            --earth-size: 30px;
+            --orbit-size: 30px;
+            --revolution: 3s;
+        }
+        
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .solar-system{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            min-width: 100vw;
+            height: 100%;
+            
+            /* background-position: center;
+            background-size: cover; */
+            position: relative;
+        }
+    
+        .planet{
+            position: absolute;
+        }
+        
+        .sun{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            /* animation: rotate-it 15s infinite linear; */
+            animation-delay: 0.4s;
+           
+        }
+
+        .mercury{
+            width: calc(var(--earth-size)*0.383);
+            height: calc(var(--earth-size)*0.383);
+            background-color: #1a1a1a;
+            border-radius: 50%;
+            transform: translate(calc((var(--orbit-size)*0.39+100)));
+        }
+
+        .venus{
+            width: calc(var(--earth-size)*0.949);
+            height: calc(var(--earth-size)*0.949);
+            background-color: #e6e6e6 ;
+            border-radius: 50%;
+        }
+
+        .earth{
+            width: calc(var(--earth-size)*1);
+            height: calc(var(--earth-size)*1);
+            background-color: #2f6a69;
+            border-radius: 50%;
+        }
+
+        .mars{
+            width: calc(var(--earth-size)*0.532);
+            height: calc(var(--earth-size)*0.532);
+            background-color: #993d00;
+            border-radius: 50%;
+        }
+        
+        .jupitar{
+            width: calc(var(--earth-size)*11.21);
+            height: calc(var(--earth-size)*11.21);
+            background-color: #b07f35;
+            border-radius: 50%;
+        }
+
+        .saturn{
+            width: calc(var(--earth-size)*9.45);
+            height: calc(var(--earth-size)*9.45);
+            background-color: #b08f36;
+            border-radius: 50%;
+        }
+
+        .uranus{
+            width: calc(var(--earth-size)*4.01);
+            height: calc(var(--earth-size)*4.01);
+            background-color: #5580aa;
+            border-radius: 50%;
+        }
+
+        .neptune{
+            width: calc(var(--earth-size)*3.88);
+            height: calc(var(--earth-size)*3.88);
+            background-color: #366896;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="solar-system">
+            <div class="planet sun"></div>
+            <div class="planet mercury"></div>
+            <div class="planet venus"></div>
+            <div class="planet earth"></div>
+            <div class="planet mars"></div>
+            <div class="planet jupitar"></div>
+            <div class="planet saturn"></div>
+            <div class="planet uranus"></div>
+            <div class="planet neptune"></div>
+        </div>
+    </div>
+</body>
+</html>

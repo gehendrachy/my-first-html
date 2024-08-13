@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            /* background-color: gray; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .wrapper{
+            width: 500px;
+            /* border: 1px solid black; */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.75);
+            /* background-color: red; */
+        }
+        
+        input[type="radio"] {
+            /* margin-top: -1px; */
+            vertical-align: middle;
+        }
+        
+        ul{
+            list-style: none;
+            padding-left: 10px;
+        }
+        
+        h1{
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        
+        .question{
+            margin-bottom: 20px;
+        }
+        
+        .btn{
+            border: 1px white solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: lightskyblue;
+            color: white;
+        }
+        
+        .btn:hover{
+            background-color: #db9a22;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .submit{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Simple Quiz</h1>
+            <div class="q-n-a">
+                <div class="question">
+                    <p>1. What is the Capital of France?</p>
+                    <ul class="answer">
+                        <li>
+                            <input type="radio" name="answer_1" id="option_1">
+                            <label for="option_1">Berlin</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_1" id="option_2">
+                            <label for="option_2">Madrid</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_1" id="option_3">
+                            <label for="option_3">Paris</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_1" id="option_4">
+                            <label for="option_4">Rome</label>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <p>2. Which planet is Known as Red Planet?</p>
+                    <ul class="answer">
+                        <li>
+                            <input type="radio" name="answer_2" id="option_5">
+                            <label for="option_5">Earth</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_2" id="option_6">
+                            <label for="option_6">Mars</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_2" id="option_7">
+                            <label for="option_7">Jupitar</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_2" id="option_8">
+                            <label for="option_8">Venus</label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <p>3. What is the largest ocean of Earth?</p>
+                    <ul class="answer">
+                        
+                        <li>
+                            <input type="radio" name="answer_3" id="option_9">
+                            <label for="option_9">Atlantic Ocean</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_3" id="option_10">
+                            <label for="option_10">Indian Ocean</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_3" id="option_11">
+                            <label for="option_11">Artic Ocean</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer_3" id="option_12">
+                            <label for="option_12">Pacific Ocean</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="submit">
+                <button class="btn btn-submit">Submit</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

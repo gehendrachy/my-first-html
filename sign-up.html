@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ::placeholder{
+            color: gray;
+        }
+        .container{
+            width: 80%;
+            height: 100vh;
+            margin: 0 auto;
+            /* background-color: gray; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .wrapper{
+            width: 400px;
+            /* border: 1px solid black; */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.75);
+            /* background-color: red; */
+        }
+        
+        input[type="radio"] {
+            /* margin-top: -1px; */
+            vertical-align: middle;
+        }
+        
+        ul{
+            list-style: none;
+            padding-left: 10px;
+        }
+        
+        h1{
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        
+        .btn{
+            border: 1px white solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: lightskyblue;
+            color: white;
+            width: 98%;
+            height: 40px;
+        }
+
+        
+        
+        .btn:hover{
+            background-color: #db9a22;
+            color: white;
+            cursor: pointer;
+        }
+        
+        /* .submit{
+            text-align: center;
+        } */
+
+        input{
+            display: block;
+            height: 25px;
+            border: 1px solid rgb(142, 141, 141);
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px 0px;
+            width: 95%;
+        }
+
+        label{
+            font-weight: 500;
+            color: rgb(70, 70, 70);
+        }
+
+        .input-box{
+            margin-bottom: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form action="">
+                <h1>Sign Up</h1>
+                <div class="input-box">
+                    <label for="username"><i class="fa-solid fa-user"></i> Username</label>
+                    <input type="text" name="name" id="username" placeholder="@johndoe">
+                </div>
+
+                <div class="input-box">
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                    <input type="email" name="email" id="email" placeholder="john@example.com">
+                </div>
+
+                <div class="input-box">
+                    <label for="password"><i class="fa-solid fa-key"></i> Password</label>
+                    <input type="password" name="password" id="username" placeholder="@johndoe">
+                </div>
+                
+                <div class="submit">
+                    <button class="btn btn-submit">Submit</button>
+                </div>
+            </form>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

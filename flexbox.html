@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        
+        body{
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+            background-color: gray;
+            width: 100vw;
+            height: 300px;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            /* overflow: hidden; */
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+            text-align: center;
+            align-content: center;
+            /* vertical-align: middle; */
+        }
+        
+        .item-8{
+            order: -1;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        
+        .item-3{
+            order: 2;
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+        
+        .item-4{
+            order: 0;
+            flex-grow: 5;
+        }
+        
+        .item-5{
+            order: 1;
+        }
+        
+        @media screen and (width<992px){
+            .container{
+                
+                background-color: purple;
+                
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .item-3{
+                background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+                background-repeat: no-repeat;
+            }
+        }
+
+        @media screen and (width<600px) {
+            .container{
+                background-color: aqua;
+                flex-wrap: wrap;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <i class="fa fa-2x fa-anchor"></i>
+        </div>
+        <div class="item-2">2</div>
+        <div class="item-3">3</div>
+        <div class="item-4">4</div>
+        <div class="item-5">5</div>
+        <div class="item-6">6</div>
+        <div class="item-7">7</div>
+        <div class="item-8">8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with nth Child</title>
+    <style>
+        .contaner{
+            text-align: center;
+        }
+        
+        td{
+            width: 400px;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+
+        .black-box{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            animation: test 5s infinite;
+        }
+
+        @keyframes test {
+            0%{transform: rotate(20deg);}
+            20%{transform: rotate(40deg);}
+            40%{transform: rotate(60deg);}
+            60%{transform: rotate(80%);}
+            80%{transform: rotate(100deg);}
+            100%{transform: rotate(120deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="black-box"></div>
+        <h1>Tablie with nth child</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
